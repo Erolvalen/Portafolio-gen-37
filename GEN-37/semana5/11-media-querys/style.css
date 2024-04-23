@@ -1,0 +1,97 @@
+/* body {
+	background-color: black;
+	color: aliceblue;
+} */
+
+/* @media screen and (max-width: 600px) {
+	img {
+		width: 500px;
+	}
+} */
+
+@media (width <= 600px) {
+	img {
+		width: 500px;
+	}
+}
+
+/* Media type print  */
+@media print {
+	.ejemplo1 {
+		text-align: end;
+		color: red;
+	}
+}
+
+/* Operadores lógicos  */
+/* @media screen and (width <= 700px) and (orientation: landscape) {
+	.ejemplo2 {
+		text-align: center;
+		color: red;
+	}
+} */
+
+/* Lista de queries  */
+@media (width >= 700px), (width <= 600px) and (orientation: landscape) {
+	.ejemplo2 {
+		text-align: center;
+		color: red;
+	}
+}
+
+/* Media queries con preferencias de usuario  */
+/* prefers-reduced-motion: animaciones,
+prefers-reduced-data: ancho de banda,
+prefers-reduced-transparency: interfaces que usen transparencias,
+prefers-constrast: contraste */
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: black;
+		color: aliceblue;
+	}
+}
+
+/* BREAKPOINTS  */
+/* Mobile first  */
+.container {
+	border: 4px solid;
+	width: 200px;
+	height: 300px;
+	background-color: aqua;
+}
+
+/* Dispositivos pequeños */
+@media (width >= 320px) {
+	.container {
+		width: 300px;
+		height: 400px;
+		background-color: blue;
+	}
+}
+
+/* Dispositivos medianos  */
+@media (width >= 576px) {
+	.container {
+		width: 400px;
+		height: 500px;
+		background-color: rgb(1, 1, 87);
+	}
+}
+
+/* Tablets  */
+@media (width >= 768px) {
+	.container {
+		width: 600px;
+		height: 700px;
+		background-color: rgb(87, 1, 87);
+	}
+}
+
+/* Dispositivos grandes  */
+@media (width >= 992px) {
+	.container {
+		width: 4800px;
+		height: 1000px;
+		background-color: rgb(161, 77, 3);
+	}
+}

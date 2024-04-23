@@ -1,0 +1,52 @@
+/*Tu misión es estilar el formulario, sin usar flexbox o grid, con las siguientes características:
+1- Coloca un background de una imagen de fondo en todo el viewport, que abarque toda la pantalla.
+2- Posiciona el formulario en el centro.
+3- Puedes darle el estilo que desees a tu formulario.
+4- Utiliza las media queries, con la técnica mobile first para adaptar tu formulario a cualquier dispositivo.
+*/
+
+/* Reset tu CSS*/
+html {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	background-image: url(https://picsum.photos/1920/1920?random=2);
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0;
+	height: 100vh;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Tu código aquí*/
+/* Puedes iniciar fuera de media queries tu estilado mobile first y posteriormente utilizar las media queries para otros dispositivos */
+
+/* Dispositivos pequeños */
+
+/* Dispositivos medianos */
+
+/* Tablets */
+
+/* Dispositivos grandes */

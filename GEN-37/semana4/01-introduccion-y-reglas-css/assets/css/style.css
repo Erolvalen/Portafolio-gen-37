@@ -1,0 +1,149 @@
+/*** Tipos de selectores ***/
+
+/* Selector universal  */
+* {
+  font-size: 20px;
+}
+
+/* Selector de tipo */
+body {
+  background-color: rgb(17, 17, 17);
+  color: rgb(189, 191, 195);
+}
+
+h2 {
+  color: palevioletred;
+}
+
+/* Selector de id */
+#soy_un_id {
+  background-color: brown;
+}
+
+/* Selector de clase */
+.soy-una-clase {
+  background-color: cadetblue;
+}
+
+.soy-otra-clase {
+  font-style: italic;
+}
+
+.y-otra-clase {
+  text-decoration: underline;
+}
+
+.texto-especifico {
+  color: red;
+  text-transform: uppercase;
+}
+
+/* Selector de atributo */
+[atributo] {
+  background-color: orangered;
+}
+
+/*** Operadores de combinación ***/
+/* hijos descendientes  */
+.contenedor-principal p {
+  background-color: rgb(5, 0, 139);
+}
+
+/* hijos directos  */
+.contenedor-principal > p {
+  background-color: chartreuse;
+  color: black;
+}
+
+/* hermanos adyacentes  */
+.item3 + li {
+  background-color: aqua;
+  color: blue;
+}
+
+/* hermanos general  */
+.items1 ~ li {
+  background-color: orange;
+  color: black;
+}
+
+/* subclases  */
+li.items-li {
+  background-color: blanchedalmond;
+  color: black;
+}
+
+/* Selector de pseudo-clase */
+/* hover  */
+.titulo:hover {
+  background-color: blueviolet;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+/* primer hijo  */
+.list li:first-child {
+  background-color: green;
+}
+
+/* último hijo  */
+.list li:last-child {
+  background-color: rgb(128, 0, 0);
+}
+
+/* hijo que yo indique */
+.list li:nth-child(2) {
+  background-color: blue;
+}
+
+.list li:nth-child(3n + 3) {
+            /* desde / cuántos  */
+  background-color: lightskyblue;
+  color: black;
+}
+
+.list li:nth-child(even) {
+  color: red;
+}
+
+.list li:nth-child(odd) {
+  color: white;
+}
+
+/* seleccionar prmero de su tipo  */
+.contenedor-secundario p:first-of-type {
+  text-decoration: line-through;
+}
+
+/* el último de su tipo  */
+.contenedor-secundario p:last-of-type {
+  text-decoration: underline;
+}
+
+/* el tipo que yo le indique  */
+.contenedor-secundario p:nth-of-type(2) {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Selectores de pseudo-elemento  */
+.title-selectores::before {
+  content: '😋';
+}
+
+.txt-selectores::after {
+  content: '🍕';
+}
+
+.first-letter::first-letter {
+  font-size: 40px;
+}
+
+.first-line::first-line {
+  background-color: blueviolet;
+}
+
+/* No todos los pseudo-elementos requieren de un selector  */
+::selection {
+  background-color: red;
+  color: white;
+}

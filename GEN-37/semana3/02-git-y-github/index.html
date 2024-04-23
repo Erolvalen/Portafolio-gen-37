@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Git y GitHub</title>
+	</head>
+	<body>
+		<h1>Git y GitHub</h1>
+		<section>
+			<h2>Instalación</h2>
+			<a href="https://git-academlo.netlify.app/">Revisa el siguiente link</a>
+		</section>
+		<section>
+			<h2>Comandos principales</h2>
+			<article>
+				<h3>Configuración</h3>
+				<ul>
+					<li>
+						git config --global user.name "tu nombre" # configurar el nombre de
+						usuario
+					</li>
+					<li>
+						git config --global user.email tucorreo@correo.com # configurar el
+						correo electrónico
+					</li>
+					<li>
+						git config --global core.editor "code --wait" # configurar el editor
+						de texto
+					</li>
+					<li>
+						git config --global core.autocrlf # [true|input] # configurar el
+						formato de los archivos
+					</li>
+					<li>
+						git config --global init.defaultBranch main # Asegura que los
+						repositorios recién creados usen el nombre main como rama principal
+					</li>
+					<li>
+						git config --global -e # editar el archivo de configuración global
+					</li>
+					<li>git config --list # ver la configuración global</li>
+					<li>git config -h # ver la ayuda de la configuración</li>
+				</ul>
+			</article>
+			<article>
+				<h3>Repositorio Local</h3>
+				<ul>
+					<li>git init # crea un nuevo repositorio en el directorio actual</li>
+					<li>git status # muestra el estado del repositorio</li>
+					<li>
+						git status --short # muestra el estado del repositorio resumido
+					</li>
+					<li>git add «archivo» # agregar archivos al área de preparación</li>
+					<li>
+						git add . # agregar todos los archivos da prioridad al archivo
+						.gitignore
+					</li>
+					<li>
+						git commit -m "descripción breve" # crear un nuevo commit con un
+						mensaje
+					</li>
+					<li>
+						git commit -am "descripción breve" # agregar y crear un nuevo commit
+						con un mensaje
+					</li>
+					<li>git log # ver el historial de commits</li>
+					<li>
+						git log --oneline # ver el historial de commits en una sola línea
+					</li>
+				</ul>
+			</article>
+			<article>
+				<h3>Repositorio Remoto</h3>
+				<ul>
+					<li>
+						git remote add (origin(nombre-corto)) (url) # agrega un nuevo
+						repositorio Git remoto como un nombre corto al que puede hacer
+						referencia fácilmente.
+					</li>
+					<li>
+						git push (remote) (branch) # se utiliza para enviar los cambios
+						confirmados (commits) desde la rama local de un repositorio Git a la
+						rama correspondiente en un repositorio remoto. Si la rama remota no
+						existe aún, Git la creará automáticamente.
+					</li>
+					<li>
+						git push --all (remote) # envia los cambios confirmados a todas las
+						ramas locales al repositorio remoto.
+					</li>
+					<li>
+						git push # envia los cambios confirmados sobre el repositorio remoto
+						al que te encuentras
+					</li>
+					<li>
+						git pull # Descarga las actualizaciones del repositorio remoto y
+						fusiona los cambios descargados con los cambios locales en una sola
+						operación.
+					</li>
+				</ul>
+			</article>
+			<article>
+				<h3>Ramas</h3>
+				<ul>
+					<li>git branch # ver las ramas</li>
+					<li>git switch -c "rama" # crear una nueva rama y cambiar a ella</li>
+					<li>git branch -d "rama" # eliminar una rama</li>
+					<li>git branch -D "rama" # eliminar una rama sin aceptar cambios</li>
+					<li>git branch -m "rama" "new-name" # renombrar una rama</li>
+					<li>git switch "rama" # cambiar de rama</li>
+					<li>git merge "rama" # fusionar una rama con la rama actual</li>
+				</ul>
+			</article>
+		</section>
+		<section>
+			<h2>Estados de git</h2>
+			<p>
+				Cuando se trabaja con Git, hay tres estados principales en los que
+				pueden estar los archivos en un repositorio:
+			</p>
+			<ul>
+				<li>
+					(M) Modificado (Modified) : Este estado indica que el archivo ha sido
+					modificado desde la última confirmación. Es decir, el archivo ha sido
+					editado, pero aún no ha sido agregado al área de preparación.
+				</li>
+				<li>
+					(A) Agregado (Added) : Este estado indica que el archivo ha sido
+					agregado al área de preparación y está listo para ser confirmado en el
+					próximo commit. Los cambios realizados en este archivo se han
+					confirmado a nivel local, pero aún no se han enviado al repositorio
+					remoto.
+				</li>
+				<li>
+					(U) Sin seguimiento (untracked) : Este estado indica que el archivo no
+					se encuentra en el índice de Git y no ha sido confirmado. Puede
+					ocurrir cuando un archivo ha sido creado recientemente en el
+					directorio de trabajo, pero aún no ha sido agregado al repositorio.
+				</li>
+				<li>
+					U: Actualizado (Updated) Además de estos estados principales, también
+					hay otros estados secundarios que se pueden mostrar en algunos casos,
+					como "C" para conflictos, "D" para eliminados, "R" para renombrados y
+					"I" para ignorados. Estos estados se pueden verificar en el terminal
+					mediante el comando "git status".
+				</li>
+			</ul>
+		</section>
+	</body>
+</html>

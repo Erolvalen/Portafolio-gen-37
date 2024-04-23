@@ -1,0 +1,76 @@
+body {
+	background-color: black;
+	color: aliceblue;
+}
+
+/* User Agent  */
+/* El que viene por defecto en cada navegador  */
+
+/* Cascada  */
+.cascada {
+	background-color: blueviolet !important;
+}
+
+.cascada {
+	background-color: aqua;
+	color: black;
+}
+
+.cascada {
+	background-color: rgb(21, 255, 0);
+	color: black;
+}
+
+/* Especificidad  */
+
+/* etiquetas  */
+table {
+	background-color: darkorange;
+}
+
+/* pseudoelementos  */
+::selection {
+	background-color: red;
+	color: black;
+}
+
+/* clases  */
+.first-row {
+	background-color: darkolivegreen;
+}
+
+/* atributos  */
+[atributo] {
+	background-color: indianred;
+}
+
+/* pseudoclases  */
+tr:last-of-type {
+	background-color: gray;
+}
+
+/* identificadors id  */
+#tercer_fila {
+	background-color: lightskyblue;
+}
+
+/* Estilo en línea  */
+/* Directamente en el elemento html  */
+
+/* Declaración !important  */
+/* NO SE USA, rompe la espoecificidad  */
+
+/* Herencia  */
+.contenedor {
+	font-style: italic;
+	font-size: 12px;
+	height: 200px;
+	border: 1px solid;
+	p {
+		border: 1px solid red;
+		/* Para quitar la herencia y solicitar tener los estilos por defecto  */
+		font-size: initial;
+		/* Inherit obliga a heredar las propiedades del padre  */
+		height: inherit;
+	}
+}

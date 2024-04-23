@@ -1,0 +1,79 @@
+body {
+	background-color: black;
+	color: aliceblue;
+}
+
+/* Ejemplo unidad absoluta  */
+.absoluta {
+	box-sizing: border-box;
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	line-height: 90px;
+	border: 4px solid;
+}
+
+/* Ejemplo unidad relativa */
+.relativa {
+	box-sizing: border-box;
+	width: 10rem;
+	height: 10rem;
+	text-align: center;
+	line-height: 150px;
+	border: 4px solid;
+}
+
+/* EM  */
+.padre-em {
+	font-size: 20px;
+	.em {
+		box-sizing: border-box;
+		/* 1em = 20px  */
+		width: 10em;
+		height: 10em;
+		text-align: center;
+		line-height: 200px;
+		border: 4px solid;
+	}
+}
+/* Ejemplo de porqué no usar em  */
+/* .contenedor {
+	font-size: 20px;
+	li {
+		box-sizing: border-box;
+		font-size: 2em;
+	}
+} */
+
+/* REM */
+.contenedor {
+	font-size: 20px;
+}
+.rem {
+	box-sizing: border-box;
+	border: 4px solid;
+	width: 10rem;
+	height: 10rem;
+}
+
+/* %  */
+.porcentaje-padre {
+	border: 4px solid;
+	width: 100%;
+	height: 65px;
+}
+
+.porcentaje {
+	border: 1px solid red;
+	width: 50%;
+	height: 50%;
+	text-align: center;
+}
+
+/* vw | vh */
+.vw-vh {
+	border: 4px solid;
+	width: 100vw;
+	height: 25vh;
+	text-align: center;
+}

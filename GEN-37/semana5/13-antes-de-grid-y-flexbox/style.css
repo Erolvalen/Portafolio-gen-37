@@ -1,0 +1,56 @@
+body {
+	background-color: black;
+	color: aliceblue;
+}
+
+/* Flotadores  */
+.flotadores {
+	border: 1px solid red;
+	width: 800px;
+	height: 400px;
+}
+
+.flotador {
+	float: left;
+	border: 1px solid;
+}
+
+.flotador-izquierda {
+	float: left;
+	margin: 5px;
+}
+
+.flotador-derecha {
+	float: right;
+	margin: 5px;
+}
+
+.clear {
+	clear: both;
+}
+
+/* Para que sí seguir utilizando float */
+.img-flotador {
+	float: right;
+	shape-outside: url(logo-academlo.png);
+	shape-margin: 5px;
+	shape-image-threshold: 99%;
+}
+
+.text-flotador {
+	text-align: justify;
+}
+
+/* Columnas CSS  */
+.column-container {
+	/* column-count: 3;
+	column-width: 300px; */
+	columns: 3 300px;
+	column-rule: 2px solid;
+	column-gap: 10px;
+	text-align: justify;
+}
+
+.conservar-columna {
+	break-before: column;
+}

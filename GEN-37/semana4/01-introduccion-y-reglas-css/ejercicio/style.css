@@ -1,0 +1,30 @@
+/* Nesting, nueva manera de estilar  */
+.container {
+  .parrafo1::first-letter {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .parrafo2 {
+    background-color: lightblue;
+    color: black;
+  }
+  .parrafo3 {
+    text-align: center;
+    text-decoration: underline;
+  }
+}
+
+a {
+  &::before {
+    content: '🍗';
+  }
+  &:hover {
+    color: red;
+  }
+}
+
+.contenido > p {
+  background-color: cyan;
+  text-decoration: underline;
+}

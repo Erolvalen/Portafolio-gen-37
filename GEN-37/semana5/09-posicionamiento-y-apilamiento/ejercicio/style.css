@@ -1,0 +1,67 @@
+/* Reset your CSS */
+html {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	background-color: blueviolet;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.container {
+	/* Centrando tu div sin flex, ni grid*/
+	position: absolute;
+	inset: 0;
+	margin: auto;
+	width: 500px;
+	height: 200px;
+	background-color: black;
+	border-radius: 10px;
+	/* Tu reto es lograr crear la imagen que viene adjunta, sólo con CSS */
+	/* Tu código aquí */
+	.container__divs {
+		position: inherit;
+		top: 70px;
+		left: 7px;
+		.container__divs--child {
+			width: 45px;
+			height: 120px;
+			background-color: aliceblue;
+			border-radius: 3px;
+			display: inline-block;
+			position: relative;
+			div {
+				width: 25px;
+				height: 50px;
+				background-color: black;
+				position: absolute;
+				right: 32px;
+			}
+		}
+	}
+}
